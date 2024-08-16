@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' // bro
 import Home from '../../pages/Home'; // ancienement app.js
 import About from '../../pages/About/about.jsx';
 import Accommodation from '../../pages/Accommodation/accommodation.jsx';
+
 // import of component
 import Error from "../Error/index.jsx";
 import Layout from "../Layout/index.jsx";

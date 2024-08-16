@@ -1,0 +1,55 @@
+// src/styles/layout.scss
+
+// font style import 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// Variables
+$primary-color: white;
+$secondary-color: black;
+$font-stack: 'Montserrat', sans-serif;
+
+// Global styles
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+
+}
+
+// layout style 
+
+header {
+    margin: 4rem;
+
+    & > nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & > ul {
+            display:flex;
+            gap:3rem;
+
+            & > li{
+                list-style-type: none;
+            }
+        }
+    }
+
+}
+
+main {
+    margin: 4rem;
+    display:flex;
+    flex-direction: column;
+    gap:5rem;
+}
+
+footer {
+    background-color: $secondary-color;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}

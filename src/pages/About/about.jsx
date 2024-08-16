@@ -1,9 +1,16 @@
+import Banner from '../../components/Banner/banner.jsx';
+import bannerImage from '../../img/picture/picture2.png';
+import Collapse from '../../components/Collapse/collapse.jsx';
 
 function About() {
     return (
-        <div>
-            <h1>PAGE ABOUT </h1>
-        </div>
+        <>
+        <Banner 
+        pImageUrl={bannerImage}
+        />
+        <Collapse />
+        </>
+
     )
 }
 

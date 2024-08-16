@@ -1,0 +1,35 @@
+
+.banner{
+    color:white;
+    text-align: center;
+    background-size:cover;
+    background-position:center;
+    position:relative; 
+    height:225px;
+    border-radius: 25px;
+
+
+    // Overlay to darken the background
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius:25px;
+        background: rgba(0, 0, 0, 0.5); // Black overlay with 40% opacity
+        z-index: 1; // Position above the background image but below the content
+        
+    }
+    .banner-content{
+        position:relative;
+        z-index:2;
+        &>h1{
+            padding:4rem;
+        }
+    }
+    
+    
+}
+

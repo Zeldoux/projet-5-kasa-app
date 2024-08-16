@@ -1,0 +1,21 @@
+.card {
+    width:30%;
+    height:350px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    .card-title{
+        justify-content:flex-start;
+        text-align: start;
+        padding:1rem;
+        font-size: 18px;
+        font-weight: 700;
+        color:black;
+    }
+
+    & > img {
+        width:100%;
+    }
+}
