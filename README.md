@@ -4,19 +4,20 @@
 ## Projet crée avec : 
 [Create React App](https://github.com/facebook/create-react-app).
 
-        ## Scripts Disponible
+## Scripts Disponible
+dans le dossier du projet, vous pouvez utiliser:
         
-        dans le dossier du projet, vous pouvez utiliser:
-        
-        ### `yarn start`
+        yarn start
 
 
 ## dépendances utilisé et installer pour l'app react : 
-    React-router : Yarn add react-router-dom;
-    SASS : Yarn add sass; (permet de compiler le SASS en CSS directement au "yarn start"
+### React-router :
+    Yarn add react-router-dom
+### SASS (permet de compiler le SASS en CSS directement au "yarn start" : 
+    Yarn add sass 
   
 
-## Technologie utilisé :
+Technologie utilisé :
     HTML , SASS/CSS , Javascript , React 
 
 
