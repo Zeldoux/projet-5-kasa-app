@@ -16,11 +16,16 @@ body {
     background-color: #FFFFFF;
 
 }
+#root{
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
 
 // layout style 
 
 header {
-    margin: 4rem;
+    margin:2rem 5rem 0 5rem;
 
     & > nav {
         display:flex;
@@ -41,7 +46,7 @@ header {
 }
 
 main {
-    margin: 4rem;
+    margin: 0 5rem 0 5rem;
     display:flex;
     flex-direction: column;
     gap:5rem;

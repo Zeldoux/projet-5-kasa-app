@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom' // act as an anchor balise 
+
+// function to display error page// component ? 
 function Error() {
     return (
         <div>

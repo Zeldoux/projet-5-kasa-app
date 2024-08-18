@@ -1,3 +1,5 @@
+
+// import of style and proptypes (react)
 import PropTypes from 'prop-types';
 import '../../styles/card.scss';
 
@@ -9,7 +11,7 @@ function Card({ id, image, title }) { //props needed for each card
         </div>
     );
 }
-
+// set card props type and set it to required 
 Card.propTypes = {
     id: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom' // browserRouter = Router , component : Routes , component : Route (path,element)
 
 // import of Page
-import Home from '../../pages/Home'; // ancienement app.js
+import Home from '../../pages/Home'; // old app.js
 import About from '../../pages/About/about.jsx';
 import Accommodation from '../../pages/Accommodation/accommodation.jsx';
 
