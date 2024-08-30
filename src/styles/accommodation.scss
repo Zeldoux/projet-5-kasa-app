@@ -1,0 +1,57 @@
+.accommodation-info {
+    margin-top: 1.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .accommodation-info-left{
+        display:flex;
+        flex-direction: column;
+
+        h2{
+            margin:0;
+            font-weight: 500;
+            color:#FF6060;
+        }
+        .location {
+            
+            font-weight:500;
+            font-size: 18px;
+        }
+
+    }
+    .accommodation-info-right{
+        display:flex;
+        flex-direction: column;
+        gap:1.5rem;
+
+    }
+}
+.accommodation-collapse{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    width:100%;
+    margin-top:1rem;
+    .collapse{
+        width:100%;
+        margin:0;
+    }
+}
+@media screen and (max-width:600px) {
+    .accommodation-info {
+        display:flex;
+        flex-direction: column;
+        
+        .accommodation-info-right{
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .accommodation-collapse{
+        display:flex;
+        flex-direction: column;
+    }
+
+}

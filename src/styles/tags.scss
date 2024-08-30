@@ -1,0 +1,45 @@
+.tags {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+    
+    .tags-element{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #FF6060;
+        border-radius: 10px;
+        & > p{
+            margin:0;
+            color:white;
+            padding:0.3rem 2rem 0.3rem 2rem;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .tags {
+        justify-content: flex-start;
+        
+        gap:1rem;
+        
+        .tags-element{
+            
+            width:33%;
+            
+            
+            & > p {
+                padding:0.2rem 0.5rem 0.2rem 0.5rem;
+                border-radius: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+
+}

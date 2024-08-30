@@ -6,26 +6,37 @@
 // Variables
 $primary-color: white;
 $secondary-color: black;
+$primary-red:#FF6060;
 $font-stack: 'Montserrat', sans-serif;
 
 // Global styles
+
 body {
     font-family: $font-stack;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
+    min-height: 100vh;
 
 }
 #root{
     display:flex;
     flex-direction: column;
     gap:50px;
+    min-height: 100vh;
+    
 }
 
 // layout style 
 
 header {
     margin:2rem 5rem 0 5rem;
+    
+    img {
+        max-width: 100%; // Ensure the logo never exceeds the container width
+        height: auto;    // Maintain aspect ratio
+                
+    }
 
     & > nav {
         display:flex;
@@ -39,6 +50,16 @@ header {
 
             & > li{
                 list-style-type: none;
+                & > a {
+                    
+                    font-size: 24px;
+                    text-decoration: none;
+                    color:inherit;
+                }
+                & > .active {
+                    text-decoration: underline;
+                    
+                }
             }
         }
     }
@@ -47,14 +68,76 @@ header {
 
 main {
     margin: 0 5rem 0 5rem;
-    display:flex;
+    flex:1;
+    display: flex;
     flex-direction: column;
-    gap:5rem;
+    
+
+    
 }
 
 footer {
     background-color: $secondary-color;
-    padding: 1rem;
+    padding: 4rem;
     color: white;
     text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+    #root{
+        height:fit-content;
+        gap:0;
+    }
+    main {
+        margin: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    header {
+        margin:2rem 2rem 0 2rem;
+        & > nav {
+            flex: 1 1;
+            
+            img {
+                width: 40%; // Set a specific width for the logo on mobile
+                height: auto; // Maintain aspect ratio
+            }
+
+
+    
+            & > ul {
+              
+                display:flex;
+                gap:2rem;
+                align-items: center;
+                padding:0;
+    
+                & > li{
+                    list-style-type: none;
+                    & > a {
+                        text-transform: uppercase; // Convert text to uppercase on mobile devices
+                        font-size: 12px;
+                    }
+
+
+                }
+            }
+        }
+        
+    }
+    footer {
+        background-color: $secondary-color;
+        padding: 5rem;
+        color: white;
+        p {
+            margin:auto;
+            font-size: 12px;
+            width:35%;
+        }
+    }
+
 }

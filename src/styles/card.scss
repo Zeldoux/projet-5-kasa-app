@@ -4,17 +4,28 @@
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+    background-size: cover;
     
     .card-title{
+        margin:0;
         justify-content:flex-start;
         text-align: start;
         padding:1rem;
         font-size: 18px;
         font-weight: 700;
-        color:black;
+        color:white;
     }
 
     & > img {
         width:100%;
     }
+}
+
+
+@media screen and (max-width:600px) {
+    .card {
+        height:255px;
+        
+    }
+
 }

@@ -1,0 +1,69 @@
+// scss style for the slideshow object 
+
+
+
+// slideshow section (slideshow-content)
+.slideshow {
+    display:flex;
+    justify-content: center;
+
+    
+}
+// slideshow content (image // arrow)
+.slideshow-content {
+    position:relative;
+    height:415px;
+    width:100%;
+    display:flex;
+    align-items: center;
+
+    .slideshow-image{
+        width:100%;
+        height:100%;
+        border-radius: 25px;
+        object-fit:cover; // maintain aspect ratio
+    }
+    // slide show current / max index display
+    .slideshow-index {
+        position:absolute;
+        bottom:0;
+        left:50%;
+        color:white;
+        font-size: 18px;
+    }
+    // left arrow
+    .slideshow-prev{
+        position:absolute;
+        left:0;
+        background:none;
+        border:none;
+        background-image: url("../img/icon/slideshow_arrow-left.png");
+
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // right arrow
+    .slideshow-next{
+        
+        position:absolute;
+        right:0;
+        background:none;
+        border:none;
+        background-image: url("../img/icon/slideshow_arrow-right.png");
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    .slideshow-content {
+        height:255px;
+    }
+}

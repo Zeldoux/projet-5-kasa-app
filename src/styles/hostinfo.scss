@@ -1,0 +1,35 @@
+.hostinfo {
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    justify-content: flex-end;
+    align-items: center;
+    .hostinfo-name {
+        text-align: end;
+        color:#FF6060;
+        width:40%;
+
+    }
+
+    .hostinfo-picture {
+        width:64px;
+        height:64px;
+        border-radius: 33px;
+
+    
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hostinfo {
+
+        .hostinfo-name{
+            font-size: 12px;
+        }
+        .hostinfo-picture{
+            width:32px;
+            height:32px;
+
+        }
+    }
+}

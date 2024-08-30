@@ -26,10 +26,32 @@
         position:relative;
         z-index:2;
         &>h1{
-            padding:4rem;
+            font-size: 48px;
+            padding:3rem;
         }
     }
     
     
 }
 
+
+@media screen and (max-width:600px) {
+    .banner {
+        height: 111px;
+        .banner-content{
+            
+            
+            &>h1 {
+                font-size: 24px;
+                text-align:left;
+                max-height: 60px;
+                width:75%;
+                padding:0.5rem 0rem 0rem 1rem;
+
+            }
+        }
+        
+
+    }
+
+}
