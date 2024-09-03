@@ -28,7 +28,7 @@ const AppRouter = () => { // Router component wraps around all routes to enable 
             <Routes>
                 <Route path="/" element={<Layout><Home /></Layout>} />
                 <Route path="/about" element={<Layout><About /></Layout>} />
-                <Route path="/accommodation/id:" element= {<Layout><Accommodation/></Layout>} />
+                <Route path="/accommodation/:id" element= {<Layout><Accommodation/></Layout>} />
                 <Route path="/*" element={<Layout><Error/></Layout>} />
             </Routes>
         </Router>
