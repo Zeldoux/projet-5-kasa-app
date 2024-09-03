@@ -27,7 +27,7 @@ import '../../styles/card.scss'; // Importing the stylesheet for the Card compon
 const Card = ({ id, image, title}) => { //props needed for each card 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate(`/accommodation/${id}`, { state: { id } });
+        navigate(`/accommodation/${id}`);
     }
     return (
         <div className="card" style={{ backgroundImage: `url(${image})` }} onClick={handleClick} aria-label={title} >

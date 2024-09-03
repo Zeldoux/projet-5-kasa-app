@@ -41,7 +41,7 @@ const Collapse = ({ title, content }) => {
                 {Array.isArray(content) ? ( // check if content is an array
                     <ul> 
                     {content.map((item, index) => ( // if it is it render a list (ul)
-                        <p key={index}>{item}</p>
+                        <li key={index}>{item}</li>
                     ))}
                 </ul>
                 // if not an array  (string)

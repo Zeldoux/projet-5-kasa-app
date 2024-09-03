@@ -37,9 +37,10 @@
     position: relative; /* Required for z-index to work */
     z-index: 1; /* Ensure content is below the header */
     ul {
+        list-style-type: none;
         padding:0;
     }
-    p {
+    li {
         font-size: 18px;
         line-height: 25.67px;
     }
@@ -92,7 +93,7 @@
             font-size: 13px;
         }
         .collapse-content {
-            p {
+            li {
                 font-size: 12px;
             }
             

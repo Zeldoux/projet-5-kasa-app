@@ -51,7 +51,7 @@ const SlideShow = ({image}) => {
                     <p className="slideshow-index">{currentIndex + 1}/{image.length}</p>
                     <button className="slideshow-next" onClick={nextSlide}></button>
                 </>
-            ) : (  // if there is not more than 1 not display button and slideshow index 
+            ) : (  // if there is not more than 1 no display button and slideshow index 
                 <img src={image[currentIndex]} alt="Slideshow" className="slideshow-image" />
             )}
          </section>

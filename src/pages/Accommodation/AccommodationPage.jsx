@@ -33,7 +33,7 @@ function Accommodation() {
 
     const accommodation = cardData.find(item => item.id === id);  // Find the accommodation data by ID
     
-    // accommodation is not found (i.e., the ID is invalid), navigate to an error page
+    // accommodation is not found (the ID is invalid), navigate to the error page
     useEffect(() => {
         if (!accommodation) {
             navigate(`/Error`);
@@ -46,6 +46,7 @@ function Accommodation() {
     }
 
      // Define a mapping of property names to their respective titles for collapsible sections
+     // const collapsibleKeys = ['description', 'equipments'];
      const titleMap = {
         description: "Description",
         equipments: "Equipements"
@@ -67,11 +68,13 @@ function Accommodation() {
         </article>
         <article className="accommodation-collapse"> 
             {Object.keys(titleMap).map((key) => (
-                <Collapse 
-                    key={`${id}-${key}`} 
-                    title={titleMap[key]} 
-                    content={accommodation[key]} 
-                />
+        accommodation[key] ? (
+            <Collapse 
+                key={`${id}-${key}`} 
+                title={titleMap[key]} 
+                content={accommodation[key]} 
+            />
+                ) : console.log("No key in titleMap{} is found in the accomodation data ")
             ))}
         </article>            
         </>

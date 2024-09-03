@@ -16,7 +16,7 @@ import logo from '../../img/logo/biglogored.png';
  */
 
 const Header = () => {
-    const location = useLocation(); // get location 
+    const location = useLocation(); // get location (URL)
 
     const isActive = (path) => location.pathname === path;
     return(
