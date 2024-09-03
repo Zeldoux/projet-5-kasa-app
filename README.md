@@ -1,6 +1,8 @@
 # Projet 5 du parcours de Developpeur Web d'OpenClassrooms
 
 
+Créez une application web de location immobilière avec React
+
 ## Projet crée avec : 
 [Create React App](https://github.com/facebook/create-react-app).
 
