@@ -65,5 +65,8 @@
 @media screen and (max-width:600px) {
     .slideshow-content {
         height:255px;
+        .slideshow-index{
+            display:none;
+        }
     }
 }
